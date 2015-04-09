@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:paddingLeft="3dp"
+android:paddingRight="3dp"
+android:layout_width="match_parent"
+android:onClick="onClickPos"
+android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="2dp"
+    android:layout_alignParentLeft="true"
+    android:id="@+id/dir_list_icon"
+    android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:src="@drawable/fil" />
+
+<TextView
+    android:layout_toRightOf="@+id/dir_list_icon"
+    android:id="@+id/dir_list_filename"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="Plik z dupy" />
+
+<TextView
+    android:layout_marginTop="-5dp"
+    android:layout_toRightOf="@+id/dir_list_icon"
+    android:layout_below="@id/dir_list_filename"
+    android:id="@+id/dir_list_filedate"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:text="20150316 20:11"/>
+
+</RelativeLayout>

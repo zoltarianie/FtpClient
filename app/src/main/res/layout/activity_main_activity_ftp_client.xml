@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="15dp"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/ftp_add_name"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name on list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ftp url:"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/ftp_add_url"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Host adres"
+            android:inputType="textUri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User:"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/ftp_add_user"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account username" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/ftp_add_pass"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account password" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/btnMenagerList"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <Button
+                    android:id="@+id/btnSaveAndConn"
+                    android:onClick="efBtnAddOrSaveAndConnect"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save &amp; connect" />
+
+                <Button
+                    android:id="@+id/btnAddAndConn"
+                    android:onClick="efBtnAddOrSaveAndConnect"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add &amp; connect" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddFirst"
+                android:onClick="efBtnAddOrSaveAndConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to list and connect" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ftplist_right_colum"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
